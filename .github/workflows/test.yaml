@@ -4,10 +4,8 @@ jobs:
   my-job:
     name: asdflaskdf
     runs-on: ubuntu-latest
-
     steps:
       - name: checkout
       uses: actions/checkout@v2
-
       - name: checkout
       run: python hello.py
