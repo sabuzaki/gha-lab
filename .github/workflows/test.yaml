@@ -1,11 +1,10 @@
 name: test
-on: push
+on:
+  push:
+    branches: [ main ]
 jobs:
-  my-job:
-    name: asdflaskdf
+  build:
     runs-on: ubuntu-latest
     steps:
-      - name: checkout
-      uses: actions/checkout@v2
-      - name: checkout
-      run: python hello.py
+      - uses: actions/checkout@v2
+      - run: python hello.py
